@@ -85,6 +85,10 @@
     color: white;
 }
 
+.header-login-hidden-section {
+    display: none;
+}
+
 .header-nav {
     font-weight: 500;
     margin-left: 50px;
@@ -209,4 +213,78 @@ footer {
 
 .footer-social-medias > svg {
     margin-right: 10px;
+}
+
+.footer-info-categ {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.footer-info-categ > div {
+    margin: 0px 10px;
+}
+
+.footer-info-categ > a {
+    text-decoration: none;
+}
+
+/* não consegui remover a estilização do link */
+
+.info-title {
+    margin-bottom: 20px;
+    font-size: initial;
+}
+
+.footer-informations > ul, li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.footer-categories > ul, li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.footer-contacts > span {
+    margin-bottom: 100px;
+}
+
+/* a margem não foi aplicada, não sei o porquê, a intenção era espaçar o <p>(85) 3051...</p> para longe do <span> */
+
+.hr {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.hr > hr {
+    width: 90%;
+}
+
+.footer-copy-right {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    #header-login-search > input {
+        display: none;
+    }
+
+    #header-login-search {
+        border: none;
+    }
+
+    #header-login-acess {
+        display: none;
+    }
+
+    .header-login-hidden-section {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
